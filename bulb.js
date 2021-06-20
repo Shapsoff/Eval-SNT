@@ -22,7 +22,7 @@ function connect() {
     console.log('Requesting Bluetooth Device...');
     navigator.bluetooth.requestDevice(
         {
-            filters: [{ services: [0xfff3] }]
+            filters: [{ services: [0xfff0] }]
         })
         .then(device => {
             console.log('> Found ' + device.name);
@@ -31,12 +31,12 @@ function connect() {
             return device.gatt.connect();
         })
         .then(server => {
-            console.log('Getting Service 0xfff3 - Light control...');
-            return server.getPrimaryService(0xfff3);
+            console.log('Getting Service 0xfff0 - Light control...');
+            return server.getPrimaryService(0xfff0);
         })
         .then(service => {
-            console.log('Getting Characteristic 0xffe9 - Light control...');
-            return service.getCharacteristic(0xffe9);
+            console.log('Getting Characteristic 0xfff3 - Light control...');
+            return service.getCharacteristic(0xfff3);
         })
         .then(characteristic => {
             console.log('All ready!');
