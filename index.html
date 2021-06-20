@@ -8,23 +8,47 @@
 
     <body>
     
-	    <h3>étape 1- test image</h3>    		
+	<div class="app-layout mdl-layout mdl-js-layout">
 
-    			<img src="1.png" alt="1" />
-    		
-	    <h3>étape 2- test lien</h3>
+        <main class="mdl-layout__content">
 
-			<p><a href="https://youtu.be/dQw4w9WgXcQ"> link test </a></p>
-	    
-	    <h3>Button test</h3>
-	    
-	     <button onclick="connect()" class="connect-button mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+            <h3>Web Light Bulb</h3>
+
+            <button onclick="connect()" class="connect-button mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
                 <i class="material-icons">bluetooth</i> Connect
             </button>
-	    
-	     <button onclick="red()" class="mdl-button mdl-js-button mdl-button--fab mdl-button--raised mdl-js-ripple-effect" style="background:#ffa0a0">
+
+            <div class="power-button hidden">
+                <button onclick="togglePower()" class="mdl-button mdl-js-button mdl-button--fab mdl-button--raised mdl-js-ripple-effect">
+                    <i class="material-icons">lightbulb_outline</i>
+                </button>
+            </div>
+
+            <div class="color-buttons hidden">
+                <button onclick="red()" class="mdl-button mdl-js-button mdl-button--fab mdl-button--raised mdl-js-ripple-effect" style="background:#ffa0a0">
                     R
                 </button>
+
+                <button onclick="green()" class="mdl-button mdl-js-button mdl-button--fab mdl-button--raised mdl-js-ripple-effect" style="background:#a0ffa0">
+                    G
+                </button>
+
+                <button onclick="blue()" class="mdl-button mdl-js-button mdl-button--fab mdl-button--raised mdl-js-ripple-effect" style="background:#a0a0ff">
+                    B
+                </button>
+
+            </div>
+
+            <div class="mic-button hidden">
+                <button onclick="listen()" class="mdl-button mdl-js-button mdl-button--fab mdl-button--raised mdl-js-ripple-effect">
+                    <i class="material-icons">microphone</i>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.4.0/annyang.min.js"></script>
+    <script src="bulb.js"></script>
 
     </body>
 </html>
