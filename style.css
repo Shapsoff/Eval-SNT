@@ -1,4 +1,8 @@
-.connect-button{
-    text-align: center;
-
+.app-layout {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    background: #fff;
+    max-width: 450px;
 }
