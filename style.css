@@ -1,0 +1,57 @@
+body {
+	background-color: #0d0e0d;
+}
+#titre-zevent-logo {
+	text-align: center;
+}
+
+#img-zevent-logo {
+	margin-top: 25px;
+	height: 10%;
+	width: 10%;
+}
+
+img:hover {
+  opacity: 0.7;
+  transition: opacity 0.80s;
+}
+
+h6 {
+	text-align: center;
+	color: #ffffff;
+	font-family: Arial;
+}
+
+h3 {
+	text-decoration: underline;
+	color: #ffffff;
+	font-family: Arial;
+}
+
+p {
+	color: #ffffff;
+	font-family: Arial;
+}
+
+ul {
+	color: #ffffff;
+	font-family: Arial;
+}
+
+#titre-stats {
+	text-align: center;
+}
+
+#imgs-stats {
+	text-align: center;
+}
+
+#img-stats-don {
+	height: 35%;
+	width: 35%;
+}
+
+#img-stats-views {
+	height: 35%;
+	width: 35%;
+}
